@@ -37,10 +37,10 @@ const RegisterView = () => {
     };
 
     return (
-        <Container className="d-flex justify-content-center align-items-center flex-column bg-warning registro vw-25">
+        <Container className="d-flex justify-content-center align-items-center vh-100 flex-column">
             <div className="p-1">
                 <h5 className="mb-4">Registro de usuario</h5>
-                <div className="form-group mb-3 inputReg">
+                <div className="form-group mb-3">
                     <label>Nombre de usuario</label>
                     <input
                         type="text"
@@ -48,10 +48,10 @@ const RegisterView = () => {
                         value={usuario.username}
                         onChange={handleSubmit}
                         name = "username"
-                        className='form-control'                       
+                        className='form-control'                        
                     />
                 </div>
-                <div className="form-group mb-3 inputReg">
+                <div className="form-group mb-3">
                     <label>Email</label>
                     <input
                         type="email"
@@ -62,7 +62,7 @@ const RegisterView = () => {
                         name='email'                        
                     />
                 </div>
-                <div className="form-group mb-4 inputReg">
+                <div className="form-group mb-4">
                     <label>Contraseña</label>
                     <input
                         type="password"
